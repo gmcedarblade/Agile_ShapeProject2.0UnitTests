@@ -37,10 +37,10 @@ public class SphereUnitTests {
 			float expected = 4.0f * (float)Math.PI * sphere.getRadius() * sphere.getRadius();
 			
 			// 2. Act
-			int actual = (int) sphere.surfaceArea();
+			float actual = sphere.surfaceArea();
 			
 			// 3. Assert
-			assertEquals(expected, actual, 1.0);
+			assertEquals(expected, actual, .001f);
 		}
 	}
 	
